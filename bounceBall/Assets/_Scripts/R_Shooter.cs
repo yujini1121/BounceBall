@@ -17,7 +17,7 @@ public class R_Shooter : MonoBehaviour
             temp.transform.position = new Vector2(transform.position.x + 1.5f, transform.position.y);
 
             //2. 오른쪽으로 이동
-            temp.GetComponent<BounceBall>().touchingWithR_Shooter = true;
+            temp.GetComponent<BounceBall>().touchedR = true;
         }
     }
 }

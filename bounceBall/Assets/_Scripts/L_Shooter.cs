@@ -12,7 +12,7 @@ public class L_Shooter : MonoBehaviour
         {
             GameObject temp = GameObject.Find("BounceBall");
             temp.transform.position = new Vector2(transform.position.x - 1.5f, transform.position.y);
-            temp.GetComponent<BounceBall>().touchingWithL_Shooter = true;
+            temp.GetComponent<BounceBall>().touchedL = true;
         }
     }
 }
